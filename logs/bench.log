@@ -138,3 +138,4 @@
 2025-10-23 07:12:05,555 INFO /home/ali/frappe-bench/env/bin/bench watch
 2025-10-23 07:38:45,548 INFO /home/ali/.local/bin/bench --site library.localhost export-doc DocType Library Member
 2025-10-23 07:39:11,222 INFO /home/ali/.local/bin/bench --site library.localhost export-doc DocType Library Membership
+2025-10-23 21:28:53,885 INFO /home/ali/.local/bin/bench set-config -g server_script_enabled true
