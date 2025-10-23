@@ -1,0 +1,140 @@
+2025-10-19 18:27:00,284 DEBUG cd frappe-bench && python3 -m venv env
+2025-10-19 18:27:04,843 DEBUG cd frappe-bench && /home/ali/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-10-19 18:27:07,632 DEBUG cd frappe-bench && /home/ali/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-10-19 18:27:09,613 LOG Getting frappe
+2025-10-19 18:27:09,613 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-10-19 18:27:35,588 LOG Installing frappe
+2025-10-19 18:27:35,591 DEBUG cd /home/ali/frappe-bench && /home/ali/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ali/frappe-bench/apps/frappe 
+2025-10-19 18:28:35,729 DEBUG cd /home/ali/frappe-bench/apps/frappe && yarn install --check-files
+2025-10-19 18:28:50,301 DEBUG cd frappe-bench && bench build
+2025-10-19 18:28:50,653 INFO /home/ali/.local/bin/bench build
+2025-10-19 18:29:17,019 LOG setting up backups
+2025-10-19 18:29:17,082 LOG backups were set up
+2025-10-19 18:29:17,083 INFO Bench frappe-bench initialized
+2025-10-19 18:30:14,755 INFO /home/ali/.local/bin/bench start
+2025-10-19 18:30:15,543 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-19 18:30:15,566 INFO /home/ali/.local/bin/bench watch
+2025-10-19 18:30:15,618 INFO /home/ali/.local/bin/bench worker
+2025-10-19 18:30:15,621 INFO /home/ali/.local/bin/bench schedule
+2025-10-19 18:31:34,964 INFO /home/ali/.local/bin/bench find .
+2025-10-19 18:31:41,476 INFO /home/ali/.local/bin/bench new-app library_management
+2025-10-19 18:31:41,481 LOG creating new app library_management
+2025-10-19 18:33:33,947 LOG Installing library_management
+2025-10-19 18:33:33,948 DEBUG cd /home/ali/frappe-bench && /home/ali/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ali/frappe-bench/apps/library_management 
+2025-10-19 18:33:36,417 DEBUG bench build --app library_management
+2025-10-19 18:33:36,755 INFO /home/ali/.local/bin/bench build --app library_management
+2025-10-20 07:53:53,244 INFO /home/ali/.local/bin/bench new-site library.localhost
+2025-10-20 07:55:36,325 INFO /home/ali/.local/bin/bench --site library.localhost add-to-hosts
+2025-10-20 07:57:38,039 INFO /home/ali/.local/bin/bench start
+2025-10-20 07:57:38,639 INFO /home/ali/.local/bin/bench watch
+2025-10-20 07:57:38,659 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-20 07:57:38,659 INFO /home/ali/.local/bin/bench worker
+2025-10-20 07:57:38,673 INFO /home/ali/.local/bin/bench schedule
+2025-10-20 07:59:13,160 INFO /home/ali/.local/bin/bench --site library.localhost install-app library_management
+2025-10-20 07:59:28,990 INFO /home/ali/.local/bin/bench --site library.localhost list-apps
+2025-10-20 08:00:15,163 INFO /home/ali/.local/bin/bench start
+2025-10-20 08:00:15,869 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-20 08:00:15,887 INFO /home/ali/.local/bin/bench schedule
+2025-10-20 08:00:15,893 INFO /home/ali/.local/bin/bench worker
+2025-10-20 08:00:15,896 INFO /home/ali/.local/bin/bench watch
+2025-10-20 08:02:29,496 INFO /home/ali/.local/bin/bench --site library.localhost set-admin-password NewPassword123
+2025-10-20 08:02:40,225 INFO /home/ali/.local/bin/bench start
+2025-10-20 08:02:40,874 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-20 08:02:40,896 INFO /home/ali/.local/bin/bench schedule
+2025-10-20 08:02:40,909 INFO /home/ali/.local/bin/bench worker
+2025-10-20 08:02:40,926 INFO /home/ali/.local/bin/bench watch
+2025-10-20 09:19:51,210 INFO /home/ali/.local/bin/bench --site library.localhost console
+2025-10-20 09:20:20,185 INFO /home/ali/.local/bin/bench --site library.localhost mariadb
+2025-10-20 09:26:19,530 INFO /home/ali/.local/bin/bench set-config -g developer_mode true
+2025-10-20 09:26:24,296 INFO /home/ali/.local/bin/bench start
+2025-10-20 09:26:24,966 INFO /home/ali/.local/bin/bench worker
+2025-10-20 09:26:24,968 INFO /home/ali/.local/bin/bench schedule
+2025-10-20 09:26:24,968 INFO /home/ali/.local/bin/bench watch
+2025-10-20 09:26:24,995 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-20 12:00:00,438 INFO /home/ali/.local/bin/bench --verbose --site all backup
+2025-10-20 19:41:25,461 INFO /home/ali/.local/bin/bench --site library.localhost console
+2025-10-20 19:42:59,578 INFO /home/ali/.local/bin/bench start
+2025-10-20 19:43:00,279 INFO /home/ali/.local/bin/bench schedule
+2025-10-20 19:43:00,302 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-20 19:43:00,309 INFO /home/ali/.local/bin/bench watch
+2025-10-20 19:43:00,387 INFO /home/ali/.local/bin/bench worker
+2025-10-20 19:46:19,180 INFO /home/ali/.local/bin/bench --site library.localhost mariadb
+2025-10-20 20:54:48,782 INFO /home/ali/.local/bin/bench start
+2025-10-20 20:54:49,580 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-20 20:54:49,627 INFO /home/ali/.local/bin/bench watch
+2025-10-20 20:54:49,674 INFO /home/ali/.local/bin/bench schedule
+2025-10-20 20:54:49,688 INFO /home/ali/.local/bin/bench worker
+2025-10-22 06:16:36,918 INFO /home/ali/.local/bin/bench start
+2025-10-22 06:16:37,592 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-22 06:16:37,610 INFO /home/ali/.local/bin/bench watch
+2025-10-22 06:16:37,624 INFO /home/ali/.local/bin/bench schedule
+2025-10-22 06:16:37,643 INFO /home/ali/.local/bin/bench worker
+2025-10-22 06:21:56,878 INFO /home/ali/.local/bin/bench --site library.localhost export-doc DocType Article
+2025-10-22 06:25:16,005 INFO /home/ali/.local/bin/bench start
+2025-10-22 06:25:16,727 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-22 06:25:16,727 INFO /home/ali/.local/bin/bench worker
+2025-10-22 06:25:16,727 INFO /home/ali/.local/bin/bench schedule
+2025-10-22 06:25:16,807 INFO /home/ali/.local/bin/bench watch
+2025-10-22 21:43:35,322 INFO /home/ali/.local/bin/bench --site library.localhost clear-cache
+2025-10-22 21:43:45,004 INFO /home/ali/.local/bin/bench start
+2025-10-22 21:43:45,422 INFO /home/ali/.local/bin/bench worker
+2025-10-22 21:43:45,449 INFO /home/ali/.local/bin/bench schedule
+2025-10-22 21:43:45,452 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-22 21:43:45,463 INFO /home/ali/.local/bin/bench watch
+2025-10-22 21:45:16,394 INFO /home/ali/.local/bin/bench --site library.localhost console
+2025-10-22 21:47:45,386 INFO /home/ali/.local/bin/bench start
+2025-10-22 21:47:45,798 INFO /home/ali/.local/bin/bench worker
+2025-10-22 21:47:45,813 INFO /home/ali/.local/bin/bench watch
+2025-10-22 21:47:45,818 INFO /home/ali/.local/bin/bench schedule
+2025-10-22 21:47:45,846 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-22 22:45:46,018 INFO /home/ali/.local/bin/bench start
+2025-10-22 22:45:46,405 INFO /home/ali/.local/bin/bench worker
+2025-10-22 22:45:46,425 INFO /home/ali/.local/bin/bench watch
+2025-10-22 22:45:46,429 INFO /home/ali/.local/bin/bench schedule
+2025-10-22 22:45:46,454 INFO /home/ali/.local/bin/bench serve --port 8002
+2025-10-22 22:51:04,753 INFO /home/ali/.local/bin/bench list-apps
+2025-10-22 22:51:07,272 INFO /home/ali/.local/bin/bench list-apps
+2025-10-22 22:51:10,361 INFO /home/ali/.local/bin/bench list-apps
+2025-10-22 22:51:16,469 INFO /home/ali/.local/bin/bench list-apps
+2025-10-22 22:53:21,843 INFO /home/ali/.local/bin/bench --site library.localhost install-app library_management
+2025-10-22 22:53:38,104 INFO /home/ali/.local/bin/bench list-apps
+2025-10-22 22:55:16,627 INFO /home/ali/.local/bin/bench list-apps
+2025-10-22 22:55:18,593 INFO /home/ali/.local/bin/bench list-apps
+2025-10-22 22:56:34,286 INFO /home/ali/.local/bin/bench init frappe-bench
+2025-10-22 22:56:34,336 DEBUG cd frappe-bench && python3 -m venv env
+2025-10-22 22:56:36,597 DEBUG cd frappe-bench && /home/ali/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-10-22 22:56:37,847 DEBUG cd frappe-bench && /home/ali/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-10-22 22:56:38,821 LOG Getting frappe
+2025-10-22 22:56:38,821 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-10-22 22:56:43,421 LOG Installing frappe
+2025-10-22 22:56:43,422 DEBUG cd /home/ali/frappe-bench/frappe-bench && /home/ali/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/ali/frappe-bench/frappe-bench/apps/frappe 
+2025-10-22 22:57:16,245 DEBUG cd /home/ali/frappe-bench/frappe-bench/apps/frappe && yarn install --check-files
+2025-10-22 22:57:26,184 DEBUG cd frappe-bench && bench build
+2025-10-22 22:57:42,324 LOG setting up backups
+2025-10-22 22:57:42,346 LOG backups were set up
+2025-10-22 22:57:42,346 INFO Bench frappe-bench initialized
+2025-10-23 06:46:00,007 INFO /home/ali/.local/bin/bench version
+2025-10-23 06:47:16,123 INFO /home/ali/.local/bin/bench --site site1.local list-apps
+2025-10-23 06:47:49,742 INFO /home/ali/.local/bin/bench --site library.localhost list-apps
+2025-10-23 06:48:05,543 INFO /home/ali/.local/bin/bench --site library.localhost migrate
+2025-10-23 06:48:12,318 INFO /home/ali/.local/bin/bench --site library.localhost clear-cache
+2025-10-23 06:48:20,256 INFO /home/ali/.local/bin/bench start
+2025-10-23 06:48:20,692 INFO /home/ali/frappe-bench/env/bin/bench worker
+2025-10-23 06:48:20,703 INFO /home/ali/frappe-bench/env/bin/bench serve --port 8002
+2025-10-23 06:48:20,734 INFO /home/ali/frappe-bench/env/bin/bench watch
+2025-10-23 06:48:20,741 INFO /home/ali/frappe-bench/env/bin/bench schedule
+2025-10-23 06:48:40,222 INFO /home/ali/.local/bin/bench --site library.localhost list-apps
+2025-10-23 06:48:56,981 INFO /home/ali/.local/bin/bench start
+2025-10-23 06:48:57,420 INFO /home/ali/frappe-bench/env/bin/bench worker
+2025-10-23 06:48:57,422 INFO /home/ali/frappe-bench/env/bin/bench serve --port 8002
+2025-10-23 06:48:57,432 INFO /home/ali/frappe-bench/env/bin/bench watch
+2025-10-23 06:48:57,475 INFO /home/ali/frappe-bench/env/bin/bench schedule
+2025-10-23 06:50:16,988 INFO /home/ali/.local/bin/bench --site library.localhost set-config allowed_hosts ["library.localhost"]
+2025-10-23 06:50:25,343 INFO /home/ali/.local/bin/bench restart
+2025-10-23 07:12:05,034 INFO /home/ali/.local/bin/bench start
+2025-10-23 07:12:05,532 INFO /home/ali/frappe-bench/env/bin/bench serve --port 8002
+2025-10-23 07:12:05,536 INFO /home/ali/frappe-bench/env/bin/bench worker
+2025-10-23 07:12:05,545 INFO /home/ali/frappe-bench/env/bin/bench schedule
+2025-10-23 07:12:05,555 INFO /home/ali/frappe-bench/env/bin/bench watch
+2025-10-23 07:38:45,548 INFO /home/ali/.local/bin/bench --site library.localhost export-doc DocType Library Member
+2025-10-23 07:39:11,222 INFO /home/ali/.local/bin/bench --site library.localhost export-doc DocType Library Membership

@@ -1,0 +1,75 @@
+2025-10-20 09:20:18,559 INFO ipython === bench console session ===
+2025-10-20 09:20:18,559 INFO ipython Apps in this namespace:
+frappe, library_management
+
+In [1]:
+
+    
+2025-10-20 09:20:18,559 INFO ipython Apps in this namespace:
+frappe, library_management
+2025-10-20 09:20:18,560 INFO ipython === session end ===
+2025-10-20 19:42:51,051 INFO ipython === bench console session ===
+2025-10-20 19:42:51,093 INFO ipython doc = frappe.get_doc({
+    "doctype": "DocType",
+    "name": "Article",
+    "module": "Library Management",
+    "custom": 1,
+    "autoname": "field:article_name",
+    "fields": [
+        {"fieldname": "article_name", "label": "Article Name", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "image", "label": "Image", "fieldtype": "Attach Image"},
+        {"fieldname": "author", "label": "Author", "fieldtype": "Data"},
+        {"fieldname": "description", "label": "Description", "fieldtype": "Text Editor"},
+        {"fieldname": "isbn", "label": "ISBN", "fieldtype": "Data"},
+        {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Issued\nAvailable", "default": "Available"},
+        {"fieldname": "publisher", "label": "Publisher", "fieldtype": "Data"}
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+})
+doc.insert()
+frappe.db.commit()
+exit()
+2025-10-20 19:42:51,093 INFO ipython frappe.delete_doc("DocType", "Article", force=1)
+frappe.db.commit()
+2025-10-20 19:42:51,093 INFO ipython doc = frappe.get_doc({
+    "doctype": "DocType",
+    "name": "Article",
+    "module": "Library Management",
+    "custom": 1,
+    "autoname": "field:article_name",
+    "fields": [
+        {"fieldname": "article_name", "label": "Article Name", "fieldtype": "Data", "reqd": 1, "in_list_view": 1},
+        {"fieldname": "image", "label": "Image", "fieldtype": "Attach Image"},
+        {"fieldname": "author", "label": "Author", "fieldtype": "Data"},
+        {"fieldname": "description", "label": "Description", "fieldtype": "Text Editor"},
+        {"fieldname": "isbn", "label": "ISBN", "fieldtype": "Data"},
+        {"fieldname": "status", "label": "Status", "fieldtype": "Select", "options": "Issued\nAvailable", "default": "Available"},
+        {"fieldname": "publisher", "label": "Publisher", "fieldtype": "Data"}
+    ],
+    "permissions": [
+        {
+            "role": "System Manager",
+            "read": 1,
+            "write": 1,
+            "create": 1,
+            "delete": 1
+        }
+    ]
+})
+doc.insert()
+frappe.db.commit()
+2025-10-20 19:42:51,093 INFO ipython === session end ===
+2025-10-22 21:45:21,375 INFO ipython === bench console session ===
+2025-10-22 21:45:21,376 INFO ipython doc = frappe.get_doc("DocType", "Library Membership")
+for field in doc.fields:
+    print(f"{field.fieldname} - {field.label} - {field.fieldtype}")
+exit()
+2025-10-22 21:45:21,376 INFO ipython === session end ===
